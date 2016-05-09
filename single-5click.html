@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>i n ê s . d u v e r g é</title>
+  <meta name="description" content="THOMSOON - Single page with minimalist two column description and one photo. Download free now with file Photoshop! ">
+  <meta name="keywords" content="thomsoon, simplicity, theme, html5, single page, boxed portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="thomsoon.com">
+  <link rel="icon" type="image/png" href="img/icon.png" />
+
+<!--Style-->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!--Preloader-->
+
+<div class="preloader" id="preloader">
+    <div class="item">
+      <div class="spinner">
+      </div>
+    </div>
+</div>
+
+
+  <!--Header-->
+  <header id="fullscreen" class="nav-down" >
+      <a href="index-no-sidebar.html"class="logo-ines"><img src="css/logo-ines.png"></a>
+      <div class="nav-bar">
+          <div class="three-column left">
+              <a class="menu-bar" href="projects.html">work</a>
+          </div>
+          <div class="three-column center">
+              <a class="menu-bar" href="about-us.html">about</a>
+          </div>
+          <div class="three-column right">
+              <a class="menu-bar" href="contact.html">contacts</a>
+          </div>
+      </div>
+
+  </header>
+
+  <div class="clear"></div>
+
+  <!--Content-->
+
+  <div class="content" id="ajax-content">
+
+
+        <div class="text-intro">
+
+          <h1>5 click meal</h1>
+
+
+	          <div class="one-column">
+	            <p>Branding, APP</p>
+	          </div>
+
+
+		          <div class="two-column">
+		            <p>"Five Click Meal" is a restaurant app that enables you to order food before you get to the restaurant. This work was developed at the tech hackathon "Shiftappens" in 2 days.<br> Design: Inês Duvergé (Me); Developers: Mário Balça e Tiago Botelho</p>
+		          </div>
+
+                <div class="clear"></div>
+
+				        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+				        <img src="img/single/5click.jpg" width="100%"><br/><br/><br/><br/>
+
+
+
+					        <div class="prev-next">
+
+					          <div class="prev-button"><a class="ajax-link" href="single-fullscreen.html">Previous work</a></div>
+					          <div class="next-button"><a class="ajax-link" href="projects.html">Next work</a></div>
+
+					        </div>
+            </div>
+
+    </div>
+
+
+
+  <!--Home Sidebar-->
+
+<div id="ajax-sidebar"></div>
+
+
+  <!--Footer-->
+
+  <footer>
+
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://www.facebook.com/thomsooncom"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-behance"></i></a>
+
+      </div>
+      <div class="copyright">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+
+
+
+    </div>
+
+
+  </footer>
+
+
+
+<!--Scripts-->
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+
+  <script src="js/script.js" type="text/javascript"></script>
+
+	<script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script>
+  <script>
+      // Hide Header on on scroll down
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 100;
+      var navbarHeight = $('header').outerHeight();
+
+      $(window).scroll(function(event){
+          didScroll = true;
+      });
+
+      setInterval(function() {
+          if (didScroll) {
+              hasScrolled();
+              didScroll = false;
+          }
+      }, 250);
+
+      function hasScrolled() {
+          var st = $(this).scrollTop();
+
+          // Make sure they scroll more than delta
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
+
+          // If they scrolled down and are past the navbar, add class .nav-up.
+          // This is necessary so you never see what is "behind" the navbar.
+          if (st > lastScrollTop && st > navbarHeight){
+              // Scroll Down
+              $('header').removeClass('nav-down').addClass('nav-up');
+          } else {
+              // Scroll Up
+              if(st + $(window).height() < $(document).height()) {
+                  $('header').removeClass('nav-up').addClass('nav-down');
+              }
+          }
+
+          lastScrollTop = st;
+      }
+  </script>
+
+
+</body>
+</html>
