@@ -62,38 +62,37 @@
         <div class="text-intro">
 
           <h1>Contact</h1>
-          <p>To contact me please use the contact form visible. When sending files, please use the following e-mail: inesduverge@gmail.com</p>
+          <p>To contact me please use the contact form visible. When sending files, please use the following e-mail: <strong>inesduverge@gmail.com</strong></p>
 
-          <form method="post" action="MAILTO:inesduverge@gmail.com" enctype="text/plain" data-jkit="[form:validateonly=true]">
+          <form action="MAILTO:inesduverge@gmail.com" method="post" enctype="text/plain">
 
           <div class="contact-one">
             <p>
               <label for="miniusername">Username:</label><br />
-              <input name="miniusername" id="miniusername" data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+              <input type="text" name="name"><br>
             </p>
           </div>
 
           <div class="contact-two">
             <p>
               <label for="miniemail">E-mail:</label><br />
-              <input name="miniemail" id="miniemail" data-jkit="[validate:required=true;strength=50;error=Please write your email]">
+              <input type="text" name="mail"><br>
+
             </p>
           </div>
 
           <div class="contact-three">
             <p>
               <label>Message:</label><br />
-              <textarea id="message" name="message"></textarea><br/><br/>
+            <input type="text" name="comment" size="50"><br/><br/>
 
-              <input class="button-submit" style="color: #ff350d;" name="send" type="submit" value="SUBMIT" />
+              <input class="button-submit" style="color: #ff350d;" type="submit" value="SEND">
             </p>
           </div>
 
             <p>
             </p>
           </form>
-
-
         </div>
 
 	<br/><br/><br/><br/><br/><br/><br/><br/>
