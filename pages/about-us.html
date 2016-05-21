@@ -37,21 +37,21 @@
 
 
  <!--Header-->
-        <header id="fullscreen" class="nav-down" >
-            <a class="logo-ines" href="../home.html"><img src="css/logo-ines.png"></a>
-            <div class="nav-bar">
-                <div class="three-column left">
-                    <a class="menu-bar" href="projects.html">work</a>
-                </div>
-                <div class="three-column center">
-                    <a class="menu-bar" href="about-us.html">about</a>
-                </div>
-                <div class="three-column right">
-                    <a class="menu-bar" href="contact.html">contacts</a>
-                </div>
-            </div>
+ <header class="work-header" id="fullscreen" class="nav-down" >
+     <a class="logo-ines" href="../home.html"><img src="css/logo-ines.png"></a>
+     <div class="nav-bar">
+         <div class="three-column left">
+             <a class="menu-bar" href="projects.html">work</a>
+         </div>
+         <div class="three-column center">
+             <a class="menu-bar" href="about-us.html">about</a>
+         </div>
+         <div class="three-column right">
+             <a class="menu-bar" href="contact.html">contacts</a>
+         </div>
+     </div>
 
-        </header>
+ </header>
 
   <div class="clear"></div>
 
@@ -180,46 +180,47 @@
                         <script src="/pages/vendors/jquery.easings.min.js"></script>
                         <script type="text/javascript" src="../pages/jquery.fullPage.js"></script>
 
-        <script>
-            // Hide Header on on scroll down
-            var didScroll;
-            var lastScrollTop = 0;
-            var delta = 100;
-            var navbarHeight = $('header').outerHeight();
+                        <script>
+                            // Hide Header on on scroll down
+                            var didScroll;
+                            var lastScrollTop = 0;
+                            var delta = 100;
+                            var navbarHeight = $('.work-header').outerHeight();
 
-            $(window).scroll(function(event){
-                didScroll = true;
-            });
+                            $(window).scroll(function(event){
+                                didScroll = true;
+                            });
 
-            setInterval(function() {
-                if (didScroll) {
-                    hasScrolled();
-                    didScroll = false;
-                }
-            }, 250);
+                            setInterval(function() {
+                                if (didScroll) {
+                                    hasScrolled();
+                                    didScroll = false;
+                                }
+                            }, 250);
 
-            function hasScrolled() {
-                var st = $(this).scrollTop();
+                            function hasScrolled() {
+                                var st = $(this).scrollTop();
 
-                // Make sure they scroll more than delta
-                if(Math.abs(lastScrollTop - st) <= delta)
-                    return;
+                                // Make sure they scroll more than delta
+                                if(Math.abs(lastScrollTop - st) <= delta)
+                                    return;
 
-                // If they scrolled down and are past the navbar, add class .nav-up.
-                // This is necessary so you never see what is "behind" the navbar.
-                if (st > lastScrollTop && st > navbarHeight){
-                    // Scroll Down
-                    $('header').removeClass('nav-down').addClass('nav-up');
-                } else {
-                    // Scroll Up
-                    if(st + $(window).height() < $(document).height()) {
-                        $('header').removeClass('nav-up').addClass('nav-down');
-                    }
-                }
+                                // If they scrolled down and are past the navbar, add class .nav-up.
+                                // This is necessary so you never see what is "behind" the navbar.
+                                if (st > lastScrollTop && st > navbarHeight){
+                                    // Scroll Down
+                                    $('.work-header').removeClass('nav-down').addClass('nav-up');
+                                } else {
+                                    // Scroll Up
+                                    if(st + $(window).height() < $(document).height()) {
+                                        $('.work-header').removeClass('nav-up').addClass('nav-down');
+                                    }
+                                }
 
-                lastScrollTop = st;
-            }
-        </script>
+                                lastScrollTop = st;
+                            }
+                        </script>
+
 
 </body>
 </html>
