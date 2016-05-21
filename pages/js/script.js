@@ -5,20 +5,20 @@ $(function() {
 Load Page
 ---------------------------------------------*/
 
- 	/* $('body').waitForImages({
+ 	$('body').waitForImages({
 		finished: function() {
 				Website();
 				$('body').jKit();
 		},
 		waitForAll: true
-	}); */
+	});
 
 
 /*-------------------------------------------
 Ajax link page transitions
 ---------------------------------------------*/
 
-/*	$("a.ajax-link").live("click", function(){
+	$("a.ajax-link").live("click", function(){
 		$this = $(this);
 		var link = $this.attr('href');
 		var current_url = $(location).attr('href');
@@ -56,7 +56,7 @@ Ajax link page transitions
 		});
     }
     return false;
-	}); */
+	});
 
 
 /*-------------------------------------------
