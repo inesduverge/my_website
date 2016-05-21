@@ -37,7 +37,7 @@
 
 
  <!--Header-->
-        <header class=".work-header" id="fullscreen" class="nav-down" >
+        <header id="fullscreen" class="nav-down" >
             <a class="logo-ines" href="../home.html"><img src="css/logo-ines.png"></a>
             <div class="nav-bar">
                 <div class="three-column left">
@@ -185,7 +185,7 @@
             var didScroll;
             var lastScrollTop = 0;
             var delta = 100;
-            var navbarHeight = $('.work-header').outerHeight();
+            var navbarHeight = $('header').outerHeight();
 
             $(window).scroll(function(event){
                 didScroll = true;
@@ -209,11 +209,11 @@
                 // This is necessary so you never see what is "behind" the navbar.
                 if (st > lastScrollTop && st > navbarHeight){
                     // Scroll Down
-                    $('.work-header').removeClass('nav-down').addClass('nav-up');
+                    $('header').removeClass('nav-down').addClass('nav-up');
                 } else {
                     // Scroll Up
                     if(st + $(window).height() < $(document).height()) {
-                        $('.work-header').removeClass('nav-up').addClass('nav-down');
+                        $('header').removeClass('nav-up').addClass('nav-down');
                     }
                 }
 
