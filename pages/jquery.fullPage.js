@@ -332,6 +332,12 @@
             }
         };
 
+
+        $("#arrow").click(myscroll);
+
+          function myscroll(){
+            FP.moveSectionDown();
+          }
         /**
         * Moves the page to the given section and slide with no animation.
         * Anchors or index positions can be used as params.

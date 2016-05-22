@@ -437,14 +437,15 @@ line-height: 150%;
 }
 
 .arrow-home{
-  position:absolute;
-  bottom:70px;
-  left:50%;
-  margin-left:-20px;
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  margin-left: -17.5px;
+  left: 50%;
 }
 
 .arrow-home img{
-  width:40px;
+  width:35px;
 }
 
 .type-proj img{
