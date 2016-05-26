@@ -333,7 +333,7 @@
         };
 
 
-        $("#arrow").click(myscroll);
+        $(".arrow-home").click(myscroll);
 
           function myscroll(){
             FP.moveSectionDown();
