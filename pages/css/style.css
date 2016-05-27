@@ -36,7 +36,6 @@ a{
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    border-bottom:1px solid #dedede;
     color: #ff350d !important;
     text-decoration:none;
 }
@@ -473,7 +472,15 @@ line-height: 150%;
 }
 
 .grid-left img, .grid-right img, .grid-middle img{
-  max-width: 100%
+  max-width: 100%;
+}
+
+.homeImg{
+  border: 6px solid #fff;
+
+}
+.homeImg:hover {
+  border: 6px solid #ff350d;
 }
 
 .want-more h1{
