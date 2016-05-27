@@ -605,7 +605,11 @@ PORTFOLIO GRID
 }
 
 .prev-button a, .next-button a{
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #FFD6D9;
+}
+
+.prev-button a:hover, .next-button a:hover{
+  border-bottom: 1px solid #ff350d;
 }
 
 
