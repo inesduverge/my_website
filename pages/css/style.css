@@ -604,6 +604,10 @@ PORTFOLIO GRID
     text-align:right;
 }
 
+.prev-button a, .next-button a{
+  border-bottom: 1px solid;
+}
+
 
 #ajax-content{width:100%;}
 
